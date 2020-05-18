@@ -13,7 +13,7 @@ int main() {
   char operand;
   int a,b,x;
   
-  while(X)
+  while(true)
     {
         printf("\n");
         printf("%s : ", KEY);
@@ -75,7 +75,6 @@ int main() {
         }
         
     }
-}
   
   return 0;
- }
+}

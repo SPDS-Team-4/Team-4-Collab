@@ -8,7 +8,7 @@ int division(int a, int b)
 
   if ( b == 0 )
   {
-    printf("Warning: Divide by zero")
+    printf("Warning: Divide by zero");
    }
 
   return (a/b);  

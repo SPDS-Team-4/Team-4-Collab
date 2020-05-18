@@ -13,6 +13,6 @@ install:
 script:
   - echo "Reached Script Section"
   - gcc   	main.c Add.c Sub.c Division.c Multiply.c factorial.c mod.c power.c helpMenu.c -Wall -o output
-  - ./output
+  - cat unitTest.txt | ./output
   - gcc     Test_Calculator.c -o cunit_demo -lcunit
   - ./cunit_demo

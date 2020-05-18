@@ -4,6 +4,6 @@
 
 int add(int a, int b) 
 {
-  int unused_var;
+  int unused_varr;
   return (a+b);  
 }

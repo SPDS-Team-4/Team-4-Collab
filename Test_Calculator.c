@@ -8,12 +8,12 @@
 
 void test_add(void)
 {
-	CU_ASSERT ( 10 == add(0,9));
+	CU_ASSERT ( add(0,9) == 10);
 }
 
 void test_subtract(void)
 {
-	CU_ASSERT ( 1 == sub(10,9));
+	CU_ASSERT ( sub(10,9) == 1);
     
 }
 

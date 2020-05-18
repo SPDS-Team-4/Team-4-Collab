@@ -33,7 +33,7 @@ int main() {
                       break;
  
             case '*': scanf(" %d %d\n",&a,&b);
-                      x = multiply(&a,&b);
+                      x = multiply(a,b);
                       printf("%d %c %d = %d",a,operand,b,x);
                       break;
  

@@ -5,10 +5,13 @@ compiler:
 before_install:
   - sudo apt-get update
   - sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev
+  - echo "Reached before install Section - cunit packages install"
+  - sudo apt-get update
 install:
   - echo  "Reached Install Section"
 
 script:
   - echo "Reached Script Section"
-  - gcc   	main.c Add.c Sub.c Division.c Multiply.c factorial.c mod.c power.c helpMenu.c -Wall -o output
-  - cat unitTest.txt | ./output 
+  - gcc   	main.c Add.c Sub.c Division.c Multiply.c factorial.c mod.c power.c helpMenu.c -Wall 
+  - gcc     Test_Calculator.c -o cunit_demo -lcunit
+  - ./cunit_demo

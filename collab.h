@@ -7,6 +7,10 @@
 
 int add ();
 int sub ();
-int subtract ();
+int division ();
 int multiply ();
+int factorial ();
+int mod ();
+int power ();
+void helpMenu ();
 #endif

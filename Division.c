@@ -10,7 +10,7 @@ int division(int a, int b)
   {
     printf("Warning: Divide by zero");
    }
-
+  else
   return (a/b);  
 
 }

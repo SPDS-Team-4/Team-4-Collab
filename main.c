@@ -18,54 +18,57 @@ int main() {
         printf("\n");
         printf("%s : ", KEY);
  
-        scanf("%c ", operand);
+        scanf("%c", operand);
  
         switch(operand)
         {
-            case '+': scanf("%d %d\n",a,b);
+            case '+': scanf(" %d %d\n",a,b);
                       x = add(a,b);
                       printf("%d %c %d = %d",a,operand,b,x);
                       break;
  
-            case '-': scanf("%d %d\n",a,b);
+            case '-': scanf(" %d %d\n",a,b);
                       x = sub(a,b);
                       printf("%d %c %d = %d",a,operand,b,x);
                       break;
  
-            case '*': scanf("%d %d\n",a,b);
+            case '*': scanf(" %d %d\n",a,b);
                       x = multiply(a,b);
                       printf("%d %c %d = %d",a,operand,b,x);
                       break;
  
-            case '/': scanf("%d %d\n",a,b);
+            case '/': scanf(" %d %d\n",a,b);
                       x = division(a,b);
                       printf("%d %c %d = %d",a,operand,b,x);
                       break;
  
-            case '?': scanf("%d %d\n",a,b);
+            case '?': scanf(" %d %d\n",a,b);
                       x = mod(a,b);
                       printf("%d %c %d = %d",a,operand,b,x);
                       break;
  
-            case '!': scanf("%d\n",a);
+            case '!': scanf(" %d\n",a);
                       x = factorial(a);
                       printf("%d%c = %d",a,operand,x);
                       break;
  
-            case '^': scanf("%d %d\n",a,b);
+            case '^': scanf(" %d %d\n",a,b);
                       x = power();
                       printf("%d %c %d = %d",a,operand,b,x);
                       break;
  
             case 'H':
-            case 'h': helpMenu();
+            case 'h': scanf("\n");
+                      helpMenu();
                       break;
  
             case 'Q':
-            case 'q': exit(0);
+            case 'q': scanf("\n");
+                      exit(0);
                       break;
             case 'c':
-            case 'C': system("cls");
+            case 'C': scanf("\n");
+                      system("cls");
                       helpMenu();
                       break;
  

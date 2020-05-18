@@ -43,7 +43,7 @@ int main() {
                       break;
  
             case '?': scanf("%d %d\n",a,b);
-                      x = modulus(a,b);
+                      x = mod(a,b);
                       printf("%d %c %d = %d",a,operand,b,x);
                       break;
  

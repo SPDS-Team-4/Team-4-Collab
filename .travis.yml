@@ -10,5 +10,5 @@ install:
 
 script:
   - echo "Reached Script Section"
-  - gcc   	main.c Add.c Sub.c Multiply.c subtract.c -Wall -o output
+  - gcc   	main.c Add.c Sub.c Division.c Multiply.c factorial.c mod.c power.c helpMenu.c -Wall -o output
   - ./output

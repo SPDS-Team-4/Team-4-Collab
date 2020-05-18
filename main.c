@@ -13,7 +13,7 @@ int main() {
   char operand;
   int a,b,x;
   
-  while(true)
+  while(1)
     {
         printf("\n");
         printf("%s : ", KEY);

@@ -4,7 +4,7 @@
 
 int power(int a, int b) {
 int result;
-  result = (int) pow (a,b);
+  result = (int) (pow(a,b));
   return (result);  
   
  }

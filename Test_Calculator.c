@@ -34,7 +34,7 @@ CU_pSuite suite_2 = CU_add_suite("TestSuite_2", 0, 0);
 CU_pSuite suite_3 = CU_add_suite("TestSuite_3", 0, 0);
 CU_add_test(suite_1, "Test_Suite_1", test_add);
 CU_add_test(suite_2, "Test_Suite_2", test_subtract);
-CU_add_test(suite_3, "Test_Suite_3", test_operationst);
+CU_add_test(suite_3, "Test_Suite_3", test_operations);
 CU_basic_set_mode(CU_BRM_VERBOSE);
 CU_basic_run_tests();
 CU_cleanup_registry();

@@ -8,7 +8,8 @@
 
 void test_add(void)
 {
-	CU_ASSERT ( add(0,9) == 10);
+	CU_ASSERT ( add(0,9) == 9);
+	CU_ASSERT ( add(-1,2) == 1);
 }
 
 void test_subtract(void)
@@ -27,7 +28,7 @@ void test_operations(void)
 	CU_ASSERT (mod(var1,var2) == 0);
 	CU_ASSERT (factorial(var2) == 120);
 	CU_ASSERT (power(var1,var2) == 100000);
-  
+        CU_ASSERT (power(10,2) == 100);
 }
 int main() 
 {

@@ -23,7 +23,7 @@ void test_operations(void)
 	CU_ASSERT (add (var1,var2) == 15);
 	CU_ASSERT (sub(var1,var2) == 5);
 	CU_ASSERT (multiply(var1,var2) == 50);
-	CU_ASSERT (divide(var1,var2) == 2);
+	CU_ASSERT (division(var1,var2) == 2);
   
 }
 int main() 

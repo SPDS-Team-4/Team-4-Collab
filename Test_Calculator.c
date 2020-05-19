@@ -24,6 +24,9 @@ void test_operations(void)
 	CU_ASSERT (sub(var1,var2) == 5);
 	CU_ASSERT (multiply(var1,var2) == 50);
 	CU_ASSERT (division(var1,var2) == 2);
+	CU_ASSERT (mod(var1,var2) == 0);
+	CU_ASSERT (factorial(var2) == 120);
+	CU_ASSERT (power(var1,var2) == 100000);
   
 }
 int main() 

@@ -3,7 +3,8 @@
 #include "collab.h"
 
 int power(int a, int b) {
-
-  return (a^b);  
+int result;
+  result = (int) pow (a,b);
+  return (result);  
   
  }

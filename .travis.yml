@@ -14,5 +14,5 @@ script:
   - echo "Reached Script Section"
   - gcc   	main.c Add.c Sub.c Division.c Multiply.c factorial.c mod.c power.c helpMenu.c -Wall -o output
   - cat unitTest.txt | ./output
-  - gcc     Add.c Sub.c Division.c Multiply.c factorial.c mod.c power.c helpMenu.c Test_Calculator.c -o cunit_demo -lcunit
+  - gcc     Test_Calculator.c Add.c Sub.c Division.c Multiply.c factorial.c mod.c power.c helpMenu.c  -o cunit_demo -lcunit
   - ./cunit_demo

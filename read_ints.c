@@ -12,4 +12,3 @@ int read_ints(){
   }
   return k;
 }
-}

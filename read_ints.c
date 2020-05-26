@@ -8,7 +8,13 @@
 */
 int read_ints(){
   int k;
-  while (scanf("%d", &k) == 1) {
+  char c;
+  while (scanf("%d%c", &k, &c) == 1) {
+    if (c == '\n'){
+      break;
+    }else{
+      //this is where the int would be added to an array
+    }
   }
-  return k;
+  return c; //this will eventually reurn an array
 }

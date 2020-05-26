@@ -15,6 +15,7 @@ int main() {
   int a = 0;
   int b = 0;
   int x = 0;
+
   
   while(1)
   {
@@ -52,6 +53,7 @@ int main() {
                       break;
  
             case '^': x = power();
+
                       printf("%d %c %d = %d",a,operand,b,x);
                       break;
  

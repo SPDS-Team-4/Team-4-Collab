@@ -13,4 +13,5 @@ int factorial ();
 int mod ();
 int power ();
 void helpMenu ();
+int read_ints();
 #endif

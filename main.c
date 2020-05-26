@@ -11,73 +11,68 @@ int main() {
   helpMenu();
   
   char operand;
-  int a,b,x = 0;
+  char whitespace;
+  int a = 0;
+  int b = 0;
+  int x = 0;
+
   
   while(1)
   {
     printf("\n");
     printf("%s : ", KEY);
  
-    scanf("%c", &operand);
+    scanf("%c%c", &operand,&whitespace);
     a = read_ints();
-    scanf("\n");
+    //scanf("\n");
  
         switch(operand)
         {
-            case '+': //scanf(" %d %d\n",&a,&b);
-                      //x = add(a,b);
+            case '+': x = add(a,b);
                       printf("%d %c %d = %d",a,operand,b,x);
                       break;
  
-            case '-': //scanf(" %d %d\n",&a,&b);
-                      //x = sub(a,b);
+            case '-': x = sub(a,b);
                       printf("%d %c %d = %d",a,operand,b,x);
                       break;
  
-            case '*': //scanf(" %d %d\n",&a,&b);
-                      //x = multiply(a,b);
+            case '*': x = multiply(a,b);
                       printf("%d %c %d = %d",a,operand,b,x);
                       break;
  
-            case '/': //scanf(" %d %d\n",&a,&b);
-                      //x = division(a,b);
+            case '/': x = division(a,b);
                       printf("%d %c %d = %d",a,operand,b,x);
                       break;
  
-            case '?': //scanf(" %d %d\n",&a,&b);
-                      //x = mod(a,b);
+            case '?': x = mod(a,b);
                       printf("%d %c %d = %d",a,operand,b,x);
                       break;
  
-            case '!': //scanf(" %d\n",&a);
-                      //x = factorial(a);
+            case '!': x = factorial(a);
                       printf("%d%c = %d",a,operand,x);
                       break;
  
-            case '^': //scanf(" %d %d\n",&a,&b);
-                      //x = power();
+            case '^': x = power();
+
                       printf("%d %c %d = %d",a,operand,b,x);
                       break;
  
             case 'H':
-            case 'h': //scanf("\n");
-                      helpMenu();
+            case 'h': printf("help\n");//helpMenu();
                       break;
  
             case 'Q':
-            case 'q': //scanf("\n");
+            case 'q': printf("quit\n");//scanf("\n");
                       exit(0);
                       break;
             case 'c':
-            case 'C': //scanf("\n");
-                      system("cls");
+            case 'C': printf("clear\n");//system("clear"); //"cls" if using windows "clear" if linux
                       helpMenu();
                       break;
  
-            default : //scanf("\n");
-                      system("cls");
+            default : printf("default\n");//system("clear"); //"cls" if using windows "clear" if linux
                       printf("\n********** You have entered an unavailable option ***********\n");
-                      helpMenu();
+                      //helpMenu();
         }
         
     }

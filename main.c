@@ -56,21 +56,21 @@ int main() {
                       break;
  
             case 'H':
-            case 'h': helpMenu();
+            case 'h': printf("help\n");//helpMenu();
                       break;
  
             case 'Q':
-            case 'q': scanf("\n");
+            case 'q': printf("quit\n");//scanf("\n");
                       exit(0);
                       break;
             case 'c':
-            case 'C': system("clear"); //"cls" if using windows "clear" if linux
+            case 'C': printf("clear\n");//system("clear"); //"cls" if using windows "clear" if linux
                       helpMenu();
                       break;
  
-            default : system("clear"); //"cls" if using windows "clear" if linux
+            default : printf("default\n");//system("clear"); //"cls" if using windows "clear" if linux
                       printf("\n********** You have entered an unavailable option ***********\n");
-                      helpMenu();
+                      //helpMenu();
         }
         
     }

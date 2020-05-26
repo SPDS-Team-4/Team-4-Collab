@@ -72,12 +72,12 @@ int main() {
                       break;
             case 'c':
             case 'C': //scanf("\n");
-                      system("cls");
+                      system("clear"); //"cls" if using windows "clear" if linux
                       helpMenu();
                       break;
  
             default : //scanf("\n");
-                      system("cls");
+                      system("clear"); //"cls" if using windows "clear" if linux
                       printf("\n********** You have entered an unavailable option ***********\n");
                       helpMenu();
         }

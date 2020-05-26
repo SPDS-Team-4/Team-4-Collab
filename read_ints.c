@@ -10,8 +10,7 @@ int read_ints(){
   int d;
   char c;
   while (scanf("%d%c", &d, &c) >= 1) {
-    fprintf(stdout,"read: '%d%c'\n",d,c);
-    fflush(stdout);
+    //fprintf(stdout,"read: '%d%c'\n",d,c); fflush(stdout); //print line for debugging.
     if (c == '\n'){
       break;
     }else{

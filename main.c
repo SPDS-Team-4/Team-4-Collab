@@ -20,7 +20,7 @@ int main() {
  
     scanf("%c", &operand);
     a = read_ints();
-    scanf("\n");
+    //scanf("\n");
  
         switch(operand)
         {

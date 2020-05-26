@@ -11,7 +11,9 @@ int main() {
   helpMenu();
   
   char operand;
-  int a,b,x = 0;
+  int a = 0;
+  int b = 0;
+  int x = 0;
   
   while(1)
   {

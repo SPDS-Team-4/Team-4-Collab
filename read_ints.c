@@ -10,13 +10,12 @@ int read_ints(){
   int d;
   char c;
   while (scanf("%d%c", &d, &c) >= 1) {
-    fprintf(stdout,"read: '%d%c'\n",d,c);
-    fflush(stdout);
+    //fprintf(stdout,"read: '%d%c'\n",d,c);//print used for debugging
     if (c == '\n'){
-      break;
+      break; //this will end the function
     }else{
       //this is where the int would be added to an array
     }
   }
-  return d; //this will eventually reurn an array
+  return d; //this will be changed to not return anything.
 }

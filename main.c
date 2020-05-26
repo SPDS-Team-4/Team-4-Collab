@@ -11,68 +11,71 @@ int main() {
   helpMenu();
   
   char operand;
-  int a,b,x;
+  int a,b,x = 0;
   
   while(1)
-    {
-        printf("\n");
-        printf("%s : ", KEY);
+  {
+    printf("\n");
+    printf("%s : ", KEY);
  
-        scanf("%c", &operand);
+    scanf("%c", &operand);
+    a = read_ints();
+    scanf("\n");
  
         switch(operand)
         {
-            case '+': scanf(" %d %d\n",&a,&b);
-                      x = add(a,b);
+            case '+': //scanf(" %d %d\n",&a,&b);
+                      //x = add(a,b);
                       printf("%d %c %d = %d",a,operand,b,x);
                       break;
  
-            case '-': scanf(" %d %d\n",&a,&b);
-                      x = sub(a,b);
+            case '-': //scanf(" %d %d\n",&a,&b);
+                      //x = sub(a,b);
                       printf("%d %c %d = %d",a,operand,b,x);
                       break;
  
-            case '*': scanf(" %d %d\n",&a,&b);
-                      x = multiply(a,b);
+            case '*': //scanf(" %d %d\n",&a,&b);
+                      //x = multiply(a,b);
                       printf("%d %c %d = %d",a,operand,b,x);
                       break;
  
-            case '/': scanf(" %d %d\n",&a,&b);
-                      x = division(a,b);
+            case '/': //scanf(" %d %d\n",&a,&b);
+                      //x = division(a,b);
                       printf("%d %c %d = %d",a,operand,b,x);
                       break;
  
-            case '?': scanf(" %d %d\n",&a,&b);
-                      x = mod(a,b);
+            case '?': //scanf(" %d %d\n",&a,&b);
+                      //x = mod(a,b);
                       printf("%d %c %d = %d",a,operand,b,x);
                       break;
  
-            case '!': scanf(" %d\n",&a);
-                      x = factorial(a);
+            case '!': //scanf(" %d\n",&a);
+                      //x = factorial(a);
                       printf("%d%c = %d",a,operand,x);
                       break;
  
-            case '^': scanf(" %d %d\n",&a,&b);
-                      x = power();
+            case '^': //scanf(" %d %d\n",&a,&b);
+                      //x = power();
                       printf("%d %c %d = %d",a,operand,b,x);
                       break;
  
             case 'H':
-            case 'h': scanf("\n");
+            case 'h': //scanf("\n");
                       helpMenu();
                       break;
  
             case 'Q':
-            case 'q': scanf("\n");
+            case 'q': //scanf("\n");
                       exit(0);
                       break;
             case 'c':
-            case 'C': scanf("\n");
+            case 'C': //scanf("\n");
                       system("cls");
                       helpMenu();
                       break;
  
-            default : system("cls");
+            default : //scanf("\n");
+                      system("cls");
                       printf("\n********** You have entered an unavailable option ***********\n");
                       helpMenu();
         }

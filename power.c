@@ -22,7 +22,7 @@ int power(int a, int b)
 }
 
 
-  int power_n_inputs( struct Input_Output_list struct_var ) 
+  int power_n_inputs( struct IO_list *struct_var ) 
 {
         int i =0;
         //the first element in the list is the base.

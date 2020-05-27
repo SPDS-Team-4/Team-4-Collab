@@ -23,7 +23,7 @@ void IO_list_defaults(IO_list *operation){
 
 /*set_operation
   Input:
-    op - A character entered by the user
+    operation - An IO_list pointer
   Output: 
     int - Integer flag for the final state of the function
       returns -1 if the character is not a valid operator or command
@@ -31,11 +31,11 @@ void IO_list_defaults(IO_list *operation){
       returns 1 if the character is a valid operator
   
   Description:
-    Uses a character to determine the desired operator and function.
+    reads in a character to determine the desired operator and function.
     If the character is a math operator, it sets the function pointer.
 
 */
-int set_operation(char op){
+int get_operation(char op){
   //set the operation function based on a user entered character
   //return a -1 if the operation character was invalid
   //return a 0 if the operation character was a system command (c,h,q)

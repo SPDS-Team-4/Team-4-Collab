@@ -1,5 +1,9 @@
 language: c
 
+branches:
+  except:
+  - Testing_GT
+
 compiler:
   - gcc
 before_install:

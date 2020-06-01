@@ -28,6 +28,7 @@ int power(int a, int b)
         //the first element in the list is the base.
         int base = struct_var.input[0];
     
+	 //for the other elements in the input list, compute the power.
         for (i=0;i<struct_var.inLimit-1;i++)
         {
             struct_var.output[i] = (int) (pow(base,struct_var.input[i+1]));
@@ -35,7 +36,7 @@ int power(int a, int b)
         }
         struct_var.outLimit = struct_var.inLimit - 1; 
         printf ("%d", struct_var.outLimit );
-        
+   //return 0. The structure is updated in the function will be availale in main.     
    return (0);  
 }
 
